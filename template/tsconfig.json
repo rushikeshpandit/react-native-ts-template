@@ -1,0 +1,21 @@
+{
+  "include": ["src/**/**/*.ts"], // which files to compile
+  "exclude": ["node_modules"], // which files to skip
+  "compilerOptions": {
+    "outDir": "dist", // where to put the compiled JS files
+    "target": "ES2020", // which level of JS support to target
+    "module": "CommonJS", // which system for the program AMD, UMD, System, CommonJS
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es6"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "typeRoots": ["../node_modules/@types", "../@types"],
+    "sourceMap": true
+  }
+}
