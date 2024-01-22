@@ -10,8 +10,8 @@ export async function get(url: string) {
     return await axios.get(finalUrl)
 }
 
-export function post(url: string, payload = null, headers = undefined) {
+export async function post(url: string, payload = null, headers = undefined) {
     let finalUrl = getBaseUrl() + url
 
-    return axios.post(finalUrl, payload, headers)
+    return await  axios.post(finalUrl, payload, headers)
 }
